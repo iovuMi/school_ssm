@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.school.dao.LoginDao">
+    <select id="queryLogin" parameterType="Login" resultType="Integer">
+        SELECT count(user_name)
+        FROM login WHERE user_name=#{userName} AND  pass_word=#{passWord}
+    </select>
+</mapper>

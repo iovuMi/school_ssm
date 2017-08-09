@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.school.dao.StudentDao">
+    <select id="queryStudent" resultType="Student">
+      SELECT  student_id,student_name,student_sex,student_brithday,student_card,student_home
+      FROM student
+    </select>
+</mapper>
